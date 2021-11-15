@@ -1,103 +1,105 @@
 <!DOCTYPE html>
-<html class="html__load" lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <meta name="description" content="Site layout" />
-    <title>DANIEL BOROVOY</title>
-    <link rel="stylesheet" href="style.min.css" />
-    <script src="./js/wow.min.js"></script>
+    <title>DANIIL BOROVOY</title>
+    <link rel="stylesheet" href="./style.min.css" />
+    <script src="./wow.min.js"></script>
     <script>
       new WOW().init()
     </script>
   </head>
-  <body class="body__load">
+  <body class="body_load">
     <div class="wrapper">
-      <section class="fullscreen start" id="section_1">
-    <div class="fullscreen__body" style="position: relative;">
-        <div class="content__fullcsreen">
-            <p  class="wow fadeIn" data-wow-duration="1s">Hello, my name is Daniel Borovoy and I am</p>
-            <h1 class="title wow fadeIn" data-wow-delay= "1s" data-wow-duration="1s"><u>FRONT END DEVELOPER</u></h1>
-            <picture><source srcset="img/arrow.svg" type="image/webp"><img class="wow fadeInUp" data-wow-delay= "1.5s" data-wow-duration="1s" src="img/arrow.svg" style="width: 50px;" alt=""></picture>
-        </div>
+      <section class="home-section">
+  <div class="section__body">
+    <div class="section__content">
+      <p
+        class="section__title section__title_greeting wow fadeIn"
+        data-wow-duration="1s"
+      >
+        Hello, my name is Daniel Borovoy and I am
+      </p>
+      <h1
+        class="section__title wow fadeIn"
+        data-wow-delay="1s"
+        data-wow-duration="1s"
+      >
+        FRONT END DEVELOPER
+      </h1>
+      <picture><source srcset="img/arrow.svg" type="image/webp"><img class="wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="1s" src="img/arrow.svg" alt="arrow"/></picture>
     </div>
-    <div class="mask"></div>
-</section> <div class="nav" id="nav">
-    <div class="nav_body">
-        <a data-goto="#section_1" class="logo menu_link" style="text-decoration: none;">HOME</a>
-            <nav class="menu_body">
-                <ul>
-                    <li><a data-goto="#section_2" href="#" class="menu_link">PORTFOLIO</a></li>
-                    <li><a data-goto="#section_3" href="#" class="menu_link">SKILLS</a></li>
-                    <li><a data-goto="#section_4" href="#" class="menu_link">CONTACT</a></li>
-                </ul>
-            </nav>
-        </div>   
+  </div>
+  <div class="home-section__filter"></div>
+</section>
+ <header>
+    <div class="header__body">
+        <a data-goto=".home-section" class="header__logo header__menu-link">HOME</a>
+        <nav class="header__menu">
+            <button data-goto=".portfolio-section" href="#" class="header__menu-link">PORTFOLIO</button>
+            <button data-goto=".skills-section" href="#" class="header__menu-link">SKILLS</buttona>
+            <button data-goto=".contact-section" href="#" class="header__menu-link">CONTACT</button>
+        </nav>   
     </div>  
-</div>
-      <section class="fullscreen section_2" id="section_2" style="position: relative;">
-    <div class="fullscreen__body" >
-            <h1 class="title wow fadeIn" data-wow-duration="1s" style="margin: 0;">MY WORKS</h1>
-            <hr width="50%" class="wow " data-wow-duration="1s" color="#000" size="1px">
-            <ul class="works wow fadeIn" data-wow-duration="1s">
-                <li><a class="popup_link" href="#" >TITLE</a></li>
-                <li><a class="popup_link" href="#" >TITLE</a></li>
-                <li><a class="popup_link" href="#" >TITLE</a></li>
-                <li><a class="popup_link" href="#" >TITLE</a></li>
-                <li><a class="popup_link" href="#" >TITLE</a></li>
-                <li><a class="popup_link" href="#" >TITLE</a></li>
-            </ul>
-        </div>
-        <div class="popup">
-            <div class="popup__body">
-                <picture><source srcset="img/cancel.svg" type="image/webp"><img class="cancel" src="img/cancel.svg" alt=""></picture>
-                <h1>Title1</h1>
-            </div>
-        </div>
-        <div class="popup">
-            <div class="popup__body">
-                <picture><source srcset="img/cancel.svg" type="image/webp"><img class="cancel" src="img/cancel.svg" alt=""></picture>
-                <h1>Title2</h1>
-            </div>
-        </div>
-        <div class="popup">
-            <div class="popup__body">
-                <picture><source srcset="img/cancel.svg" type="image/webp"><img class="cancel" src="img/cancel.svg" alt=""></picture>
-                <h1>Title3</h1>
-            </div>
-        </div>
-        <div class="popup">
-            <div class="popup__body">
-                <picture><source srcset="img/cancel.svg" type="image/webp"><img class="cancel" src="img/cancel.svg" alt=""></picture>
-                <h1>Title4</h1>
-            </div>
-        </div>
-        <div class="popup">
-            <div class="popup__body">
-                <picture><source srcset="img/cancel.svg" type="image/webp"><img class="cancel" src="img/cancel.svg" alt=""></picture>
-                <h1>Title5</h1>
-            </div>
-        </div>
-        <div class="popup">
-            <div class="popup__body">
-                <picture><source srcset="img/cancel.svg" type="image/webp"><img class="cancel" src="img/cancel.svg" alt=""></picture>
-                <h1>Title6</h1>
-            </div>
-        </div>
+</header>
+      <section class="portfolio-section">
+  <div class="section__body">
+    <h1 class="section__title wow fadeIn" data-wow-duration="1s">MY WORKS</h1>
+    <ul class="section__portfolio-list wow fadeIn" data-wow-duration="1s">
+      <li><a class="popup-link" href="#">TITLE</a></li>
+      <li><a class="popup-link" href="#">TITLE</a></li>
+      <li><a class="popup-link" href="#">TITLE</a></li>
+      <li><a class="popup-link" href="#">TITLE</a></li>
+      <li><a class="popup-link" href="#">TITLE</a></li>
+      <li><a class="popup-link" href="#">TITLE</a></li>
+    </ul>
+    <div class="popup">
+      <div class="popup__body">
+        <picture><source srcset="img/cancel.svg" type="image/webp"><img class="popup__cancel" src="img/cancel.svg" alt="" /></picture>
+        <h1>Title1</h1>
+      </div>
     </div>
-</section> <section class="fullscreen section_3" id="section_3">
-  <div class="fullscreen__body">
-    <h1 class="title wow fadeIn" data-wow-duration="1s">MY SKILLS</h1>
-    <hr
-      width="50%"
-      class="wow fadeIn"
-      data-wow-duration="1s"
-      color="#000"
-      size="1px"
-    />
-    <div class="skills wow fadeIn">
-      <div class="html">
+    <div class="popup">
+      <div class="popup__body">
+        <picture><source srcset="img/cancel.svg" type="image/webp"><img class="popup__cancel" src="img/cancel.svg" alt="" /></picture>
+        <h1>Title2</h1>
+      </div>
+    </div>
+    <div class="popup">
+      <div class="popup__body">
+        <picture><source srcset="img/cancel.svg" type="image/webp"><img class="popup__cancel" src="img/cancel.svg" alt="" /></picture>
+        <h1>Title3</h1>
+      </div>
+    </div>
+    <div class="popup">
+      <div class="popup__body">
+        <picture><source srcset="img/cancel.svg" type="image/webp"><img class="popup__cancel" src="img/cancel.svg" alt="" /></picture>
+        <h1>Title4</h1>
+      </div>
+    </div>
+    <div class="popup">
+      <div class="popup__body">
+        <picture><source srcset="img/cancel.svg" type="image/webp"><img class="popup__cancel" src="img/cancel.svg" alt="" /></picture>
+        <h1>Title5</h1>
+      </div>
+    </div>
+    <div class="popup">
+      <div class="popup__body">
+        <picture><source srcset="img/cancel.svg" type="image/webp"><img class="popup__cancel" src="img/cancel.svg" alt="" /></picture>
+        <h1>Title6</h1>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="skills-section">
+  <div class="section__body">
+    <h1 class="section__title wow fadeIn" data-wow-duration="1s">MY SKILLS</h1>
+    <div class="section__skills wow fadeIn">
+      <div class="section__item">
         <h1>HTML</h1>
         <p
           style="font-size: 80px"
@@ -107,7 +109,7 @@
           data-wow-duration="2s"
         ></p>
       </div>
-      <div class="css">
+      <div class="section__item">
         <h1>CSS</h1>
         <p
           style="font-size: 80px"
@@ -117,7 +119,7 @@
           data-wow-duration="2s"
         ></p>
       </div>
-      <div class="js">
+      <div class="section__item">
         <h1>JS</h1>
         <p
           style="font-size: 80px"
@@ -127,7 +129,7 @@
           data-wow-duration="2s"
         ></p>
       </div>
-      <div class="gulp">
+      <div class="section__item">
         <h1>GULP</h1>
         <p
           style="font-size: 80px"
@@ -137,7 +139,7 @@
           data-wow-duration="2s"
         ></p>
       </div>
-      <div class="jQuery">
+      <div class="section__item">
         <h1>JQUERY</h1>
         <p
           style="font-size: 80px"
@@ -147,7 +149,7 @@
           data-wow-duration="2s"
         ></p>
       </div>
-      <div class="wordpress">
+      <div class="section__item">
         <h1>WORDPRESS</h1>
         <p
           style="font-size: 80px"
@@ -161,49 +163,42 @@
   </div>
 </section>
 
-      <section class="fullscreen section_4" id="section_4">
-  <div class="fullscreen__body">
-    <h1 class="title wow fadeIn" data-wow-duration="1s">DROP ME A LINE</h1>
-    <hr
-      width="50%"
-      class="wow fadeIn"
-      data-wow-duration="1s"
-      color="#000"
-      size="1px"
-    />
-    <div class="form_body wow fadeIn" data-wow-duration="1s">
-      <form action="#">
-        <input type="name" maxlength="30" placeholder="Name" required />
-        <input type="email" placeholder="E-mail" required />
-        <textarea
-          type="text"
-          maxlength="500"
-          placeholder="Message"
-          required
-        ></textarea>
-        <button type="submit">SEND A MESSAGE</button>
-      </form>
-    </div>
+      <section class="contact-section">
+  <div class="section__body">
+    <h1 class="section__title wow fadeIn" data-wow-duration="1s">
+      DROP ME A LINE
+    </h1>
+    <form class="section__message-form wow fadeIn" data-wow-duration="1s">
+      <input type="name" maxlength="30" placeholder="Name" required />
+      <input type="email" placeholder="E-mail" required />
+      <textarea
+        type="text"
+        maxlength="500"
+        placeholder="Message"
+        required
+      ></textarea>
+      <button type="submit">SEND A MESSAGE</button>
+    </form>
   </div>
 </section>
  <footer>
   <div class="footer__body">
-    <div class="telegram">
+    <div class="footer__item">
       <a href="https://t.me/daniil_borovoy" rel="noreferrer" target="_blank"><picture><source srcset="./img/telegram-icon.svg" type="image/webp"><img src="./img/telegram-icon.svg" alt="telegram"  /></picture></a>
     </div>
-    <div class="github">
+    <div class="footer__item">
       <a href="https://github.com/daniil-borovoy" rel="noreferrer" target="_blank"><picture><source srcset="./img/github-icon.svg" type="image/webp"><img src="./img/github-icon.svg" alt="github" /></picture></a>
     </div>
-    <div class="vk">
+    <div class="footer__item">
       <a href="https://vk.com/daniilborovoy" rel="noreferrer" target="_blank"><picture><source srcset="./img/vk-icon.svg" type="image/webp"><img src="./img/vk-icon.svg" alt="vk" /></picture></a>
     </div>
-    <div class="instagram">
-      <a href="https://www.instagram.com/daniil.borovoy/" rel="noreferrer" target="_blank"><picture><source srcset="./img/intagram-icon.svg" type="image/webp"><img src="./img/intagram-icon.svg" alt="vk" /></picture></a>
+    <div class="footer__item">
+      <a href="https://www.instagram.com/daniil.borovoy" rel="noreferrer" target="_blank"><picture><source srcset="./img/intagram-icon.svg" type="image/webp"><img src="./img/intagram-icon.svg" alt="instagram" /></picture></a>
     </div>
   </div>
 </footer>
 
     </div>
-    <script src="js/script.min.js"></script>
+    <script src="./script.min.js"></script>
   </body>
 </html>
